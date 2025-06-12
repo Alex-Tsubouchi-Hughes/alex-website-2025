@@ -101,7 +101,7 @@ body, html {
   display: flex;
   align-items: center;
 
-  padding-left: 0px;
+  padding-left: 75px;
   position: fixed;
   top: 43.5%;
   left: 0px;
@@ -126,7 +126,7 @@ body, html {
   display: flex;
   align-items: center;
 
-  padding-right: 0px;
+  padding-right: 75px;
   position: fixed;
   top: 43.5%;
   right: 0px;
