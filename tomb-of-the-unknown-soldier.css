@@ -1,0 +1,642 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.tool-bar-phone{
+  display: none;
+}
+.tool-bar{
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: top 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+.tool-bar-english-start{
+  margin-left: 75px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-english{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-language{
+  margin-left: 25px;
+  margin-right: 75px;
+  margin-left: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.tool-bar-english-text{
+  color: rgb(69, 101, 173);
+}
+.tool-bar-japanese-text{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(230, 51, 49);
+  font-size: 30px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.divider{
+  border-left: 3px solid rgb(69, 101, 173);
+  height: 33px;
+
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.tool-bar-english-end-text{
+  color: rgb(69, 101, 173);
+  margin-left: 7px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.tool-bar-english-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(230, 51, 49);
+}
+.tool-bar-english-end-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(230, 51, 49);
+}
+.tool-bar-japanese-text:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+  color: rgb(69, 101, 173);
+}
+.main-image{
+  background-image: url("images/portfolio/Tomb of the Unknown Soldier/Tomb of the Unknown Soldier 05.jpg");
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tool-bar-logo-left{
+  height: 115px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 75px;
+  position: fixed;
+  top: 43.5%;
+  left: 0px;
+  z-index: 400;
+  transition: left 1s;
+}
+
+#alexjplogo-container{
+  width: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alexjplogo {
+  max-width: 100%;
+  height: auto;
+}
+
+.tool-bar-logo-right{
+  height: 115px;
+  display: flex;
+  align-items: center;
+
+  padding-right: 75px;
+  position: fixed;
+  top: 43.5%;
+  right: 0px;
+  z-index: 400;
+  transition: right 1s;
+}
+
+#alexlogo-container{
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#alexlogo {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.text-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 125px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 125px;
+}
+.heading-container{
+  padding-right: 75px;
+}
+.sub-heading{
+  font-weight: 500;
+  font-size: 30px;
+}
+.body-text{
+  width: 800px;
+}
+.portfolio{
+  display: grid; 
+  padding-right: 75px;
+  padding-left: 75px;
+  grid-template-columns: 1fr;
+}
+.image-container{
+  padding-bottom: 50px;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+h1{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(69, 101, 173);
+  font-size: 30px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+p{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(69, 101, 173);
+  font-size: 30px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h3{
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(69, 101, 173);
+  text-align: center;
+  font-size: 30px;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+
+  .tool-bar{
+    height: 82px;
+  }
+  .tool-bar-english-start{
+    margin-left: 56px;
+    margin-right: 19px;
+  }
+  .tool-bar-english{
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .tool-bar-language{
+    margin-left: 19px;
+    margin-right: 56px;
+    margin-left: 5px;
+  }
+  .divider{
+    border-left: 2px solid rgb(69, 101, 173);
+    height: 25px;
+  
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .tool-bar-japanese-text{
+    font-size: 22px;
+  }
+  .tool-bar-logo-left{
+    height: 86px;
+      padding-left: 56px;
+  }
+  .tool-bar-logo-right{
+    height: 86px;
+    padding-right: 56px;
+  }
+  #alexjplogo-container{
+    width: 85px;
+  }
+  #alexlogo-container{
+    width: 79px;
+  }
+  .text-container{
+    padding-top: 95px;
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-bottom: 95px;
+  }
+  .sub-heading{
+    font-size: 22px;
+  }
+  .body-text{
+    width: 600px;
+  }
+  .portfolio{
+    display: grid; 
+    padding-right: 56px;
+    padding-left: 56px;
+    grid-template-columns: 1fr;
+    }
+  .image-container{
+    padding-bottom: 38px;
+  }
+  p{
+    font-size: 22px;
+  }
+  h1{
+    font-size: 22px;
+  }
+  h2{
+    font-size: 22px;
+  }
+  h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+  .tool-bar{
+    height: 66px;
+  }
+  .tool-bar-english-start{
+    margin-left: 45px;
+    margin-right: 19px;
+  }
+  .tool-bar-english{
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .tool-bar-language{
+    margin-left: 19px;
+    margin-right: 45px;
+    margin-left: 5px;
+  }
+  .divider{
+    border-left: 2px solid rgb(69, 101, 173);
+    height: 25px;
+  
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .tool-bar-japanese-text{
+    font-size: 20px;
+  }
+  .tool-bar-logo-left{
+    height: 86px;
+      padding-left: 45px;
+  }
+  .tool-bar-logo-right{
+    height: 86px;
+    padding-right: 45px;
+  }
+  #alexjplogo-container{
+    width: 85px;
+  }
+  #alexlogo-container{
+    width: 79px;
+  }
+  .text-container{
+    padding-top: 75px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 75px;
+  }
+  .sub-heading{
+    font-size: 20px;
+  }
+  .body-text{
+    width: 480px;
+  }
+  .portfolio{
+    display: grid; 
+    padding-right: 45px;
+    padding-left: 45px;
+    grid-template-columns: 1fr;
+    }
+  .image-container{
+    padding-bottom: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+
+  .main-image{
+    background-image: url("images/portfolio/Tomb of the Unknown Soldier/Tomb of the Unknown Soldier 05.jpg");
+    height: 70vh; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .tool-bar{
+    height: 66px;
+  }
+  .tool-bar-english-start{
+    margin-left: 45px;
+    margin-right: 19px;
+  }
+  .tool-bar-english{
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+  .tool-bar-language{
+    margin-left: 19px;
+    margin-right: 45px;
+    margin-left: 5px;
+  }
+  .divider{
+    border-left: 2px solid rgb(69, 101, 173);
+    height: 25px;
+  
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .tool-bar-japanese-text{
+    font-size: 20px;
+  }
+  .tool-bar-logo-left{
+    height: 86px;
+      padding-left: 45px;
+  }
+  .tool-bar-logo-right{
+    height: 86px;
+    padding-right: 45px;
+  }
+  #alexjplogo-container{
+    width: 85px;
+  }
+  #alexlogo-container{
+    width: 79px;
+  }
+  .text-container{
+    display: block;
+    justify-content: none;
+    flex-direction: none;
+    padding-top: 75px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 75px;
+
+  }
+  .sub-heading{
+    font-size: 20px;
+  }
+  .body-text{
+    padding-top: 10px;
+    width: auto;
+  }
+  .portfolio{
+    display: grid; 
+    padding-right: 45px;
+    padding-left: 45px;
+    grid-template-columns: 1fr;
+    }
+  .image-container{
+    padding-bottom: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+
+
+}
+@media only screen and (max-width: 600px){
+
+  .main-image{
+    background-image: url("images/portfolio/Tomb of the Unknown Soldier/Tomb of the Unknown Soldier 05.jpg");
+    height: 70vh; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .tool-bar-phone{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    display: flex;
+  
+    transition: top 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+  }
+  .phone-links-bg{
+    display: none;
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    background-color: white;
+    opacity: 0.75;
+    height: 235px;
+    width: 100vh;
+  }
+  .tool-bar-phone #phone-links {
+    display: none;
+  }
+  .phone-links {
+    padding-top: 35px;
+    position: block;
+    display: none;
+  }
+  .tool-bar-phone a {
+    text-decoration: none;
+    display: block;
+  }
+  
+  .phone-text{
+    z-index: 500;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
+  }
+  
+  .logo-phone-en{
+    left: 15px;
+    top: 15px;
+    position: absolute;
+    height: 30px;
+  }
+  .logo-phone-jp{
+    left: 50px;
+    top: 15px;
+    position: absolute;
+    height: 30px;
+  }
+  .hamburger-icon-en{
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    overflow: hidden;
+  }
+
+  .tool-bar{
+ display: none;
+  }
+  .tool-bar-english-text{
+    color: rgb(69, 101, 173);
+    z-index: 500;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .tool-bar-japanese-text{
+    z-index: 500;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .tool-bar-english-text:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: rgb(230, 51, 49);
+  }
+  .tool-bar-japanese-text:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    color: rgb(69, 101, 173);
+  }
+  .tool-bar-logo-left{
+    display: none;
+  }
+  .tool-bar-logo-right{
+    display: none;
+  }
+
+
+  .text-container{
+    display: block;
+    justify-content: none;
+    flex-direction: none;
+    padding-top: 75px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 75px;
+  }
+  .sub-heading{
+    font-size: 18px;
+  }
+  .body-text{
+    padding-top: 10px;
+    width: auto;
+  }
+  .portfolio{
+    display: grid; 
+    padding-right: 15px;
+    padding-left: 15px;
+    grid-template-columns: 1fr;
+    }
+  .image-container{
+    padding-bottom: 15px;
+  }
+  p{
+    font-size: 18px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+}
+
